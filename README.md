@@ -20,6 +20,9 @@ in 21 years
 ## Version
 TimeAgo v1.0.2
 
+## Documentation
+Check out the [Documentation](https://anass-abea.github.io/TimeAgo-Documentation/)
+
 --------
 
 # Usage
