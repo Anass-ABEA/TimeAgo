@@ -4,7 +4,6 @@ import io.github.anass_abea.interf.Duration;
 import io.github.anass_abea.interf.Language;
 import io.github.anass_abea.interf.StringFormat;
 import io.github.anass_abea.interf.Unit;
-import io.github.anass_abea.enumClasses.UnitValue;
 
 public class StringFormatImpl implements StringFormat {
     private final Language outputLanguage;
@@ -15,7 +14,7 @@ public class StringFormatImpl implements StringFormat {
 
     @Override
     public String getResult(Duration duration) {
-        if (duration.getDiff()==0) return outputLanguage.keyWord_Now();
+        if (duration.getDiff()<1000) return outputLanguage.keyWord_Now();
 
         String res = "";
         long unitNumber = duration.getNumberOfUnits();
@@ -28,7 +27,7 @@ public class StringFormatImpl implements StringFormat {
     }
 
     private String addKeyWordAgo(String res) {
-        if (outputLanguage.keyWord_In_ShownAtBeginning()){
+        if (outputLanguage.keyWord_Ago_ShownAtBeginning()){
             return outputLanguage.keyWord_Ago()+ " "+res;
         }
         return res+" "+outputLanguage.keyWord_Ago();

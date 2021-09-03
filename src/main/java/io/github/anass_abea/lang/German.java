@@ -2,20 +2,20 @@ package io.github.anass_abea.lang;
 
 import io.github.anass_abea.interf.Language;
 
-public class French implements Language {
+public class German implements Language {
     @Override
     public String keyWord_Now() {
-        return "maintenant";
+        return "Jetzt";
     }
 
     @Override
     public String keyWord_Ago() {
-        return "il y a";
+        return "vor";
     }
 
     @Override
     public String keyWord_In() {
-        return "dans";
+        return "in";
     }
 
     @Override
@@ -30,61 +30,61 @@ public class French implements Language {
 
     @Override
     public String keyWord_Hours() {
-        return "heures";
+        return "Stunden";
     }
 
     @Override
     public String keyWord_Hour() {
-        return "heure";
+        return "Stunde";
     }
 
     @Override
     public String keyWord_Minutes() {
-        return "minutes";
+        return "Minuten";
     }
 
     @Override
     public String keyWord_Minute() {
-        return "minute";
+        return "Minute";
     }
 
     @Override
     public String keyWord_Seconds() {
-        return "secondes";
+        return "Stunde";
     }
 
     @Override
     public String keyWord_Second() {
-        return "seconde";
+        return "Stunden";
     }
 
     @Override
     public String keyWord_Days() {
-        return "jours";
+        return "Tage";
     }
 
     @Override
     public String keyWord_Day() {
-        return "jour";
+        return "Tag";
     }
 
     @Override
     public String keyWord_Months() {
-        return "mois";
+        return "Monate";
     }
 
     @Override
     public String keyWord_Month() {
-        return "mois";
+        return "Monat";
     }
 
     @Override
     public String keyWord_Years() {
-        return "ans";
+        return "Jahre";
     }
 
     @Override
     public String keyWord_Year() {
-        return "an";
+        return "Jahr";
     }
 }

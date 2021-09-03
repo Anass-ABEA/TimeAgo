@@ -12,7 +12,7 @@ import java.time.Instant;
 import java.util.Date;
 
 public class TimeAgo {
-    private final Long fromDate;
+    private Long fromDate;
     private Language language = new EnglishDefault();
 
     public TimeAgo language(Languages language){
@@ -25,13 +25,13 @@ public class TimeAgo {
     }
 
     public TimeAgo(Date from) {
-       this(from.getTime());
+       this(from !=null ? from.getTime(): new Date().getTime());
     }
-    public TimeAgo(Long from) {
+    public TimeAgo(long from) {
        this.fromDate = from;
     }
     public TimeAgo(Instant instant){
-        this(Date.from(instant).getTime());
+        this(instant!=null? Date.from(instant) : new Date());
     }
     public TimeAgo(){
         this.fromDate = new Date().getTime();
@@ -43,9 +43,9 @@ public class TimeAgo {
         return format.getResult(duration);
     }
     public String timeUntil(Date targetDate){
-        return timeUntil(targetDate.getTime());
+        return timeUntil(targetDate!=null ? targetDate.getTime() : new Date().getTime());
     }
     public String timeUntil(Instant targetDate){
-        return timeUntil(Date.from(targetDate));
+        return timeUntil(targetDate!=null ? Date.from(targetDate) : new Date());
     }
 }
