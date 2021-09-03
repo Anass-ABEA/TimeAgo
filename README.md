@@ -18,7 +18,7 @@ in 21 years
 ```
 
 ## Version
-TimeAgo v1.0.1
+TimeAgo v1.0.2
 
 --------
 
@@ -27,7 +27,7 @@ TimeAgo v1.0.1
 
 open your build.gradle and add the following line:
 ```
-implementation 'io.github.anass-abea:timeago:1.0.0'
+implementation 'io.github.anass-abea:timeago:1.0.2'
 ```
 
 ## Maven
@@ -36,7 +36,7 @@ Open your POM.xml and add the following lines inside the `<dependencies>` Tag
 <dependency>
     <groupId>io.github.anass-abea</groupId>
     <artifactId>TimeAgo</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
 </dependency>
 ```
 
