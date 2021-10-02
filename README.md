@@ -30,7 +30,7 @@ Check out the [Documentation](https://anass-abea.github.io/TimeAgo-Documentation
 
 open your build.gradle and add the following line:
 ```
-implementation 'io.github.anass-abea:timeago:1.0.2'
+implementation 'io.github.anass-abea:Timeago:1.0.2'
 ```
 
 ## Maven
